@@ -40,14 +40,14 @@ Add the following Maven dependency to your own project pom.xml:
 <dependency>
     <groupId>uk.co.caprica</groupId>
     <artifactId>vlcj</artifactId>
-    <version>3.12.0</version>
+    <version>3.12.1</version>
 </dependency>
 ```
 
 News
 ----
 
-_The 3.12.0 release of vlcj will likely by the last of the 3.x series. New development will switch to vlcj 4.x, which
+_The 3.12.1 release of vlcj will likely by the last of the 3.x series. New development will switch to vlcj 4.x, which
 may make breaking API changes such as removing native functions no longer supported by LibVLC. As a minimum, LibVLC 3.x
 will be required for vlcj 4, LibVLC 2.x will not be supported. We may also bump the JDK dependency which is currently at
 JDK 6._
@@ -119,7 +119,8 @@ The vlcj project page is at [github](http://caprica.github.com/vlcj "vlcj at git
 
 Online Javadoc is available:
 
-* [3.12.0 (current)](http://caprica.github.com/vlcj/javadoc/3.12.0/index.html "3.12.0 Javadoc")
+* [3.12.1 (current)](http://caprica.github.com/vlcj/javadoc/3.12.1/index.html "3.12.1 Javadoc")
+* [3.12.0](http://caprica.github.com/vlcj/javadoc/3.12.0/index.html "3.12.0 Javadoc")
 * [3.11.0](http://caprica.github.com/vlcj/javadoc/3.11.0/index.html "3.11.0 Javadoc")
 * [3.10.1](http://caprica.github.com/vlcj/javadoc/3.10.1/index.html "3.10.1 Javadoc")
 * [3.10.0](http://caprica.github.com/vlcj/javadoc/3.10.0/index.html "3.10.0 Javadoc")
