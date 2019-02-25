@@ -137,7 +137,7 @@ final class TrackInformation {
             track.u.video.pose.f_pitch,
             track.u.video.pose.f_roll,
             track.u.video.pose.f_field_of_view,
-            null,
+            Multiview.multiview(track.u.video.i_multiview),
             codecDescription(libvlc, TrackType.VIDEO, track.i_codec)
         );
     }
