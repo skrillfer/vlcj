@@ -22,7 +22,7 @@ package uk.co.caprica.vlcj.player.embedded.videosurface;
 import com.sun.jna.Pointer;
 import uk.co.caprica.vlcj.binding.LibVlc;
 import uk.co.caprica.vlcj.binding.internal.libvlc_video_cleanup_cb;
-import uk.co.caprica.vlcj.binding.internal.libvlc_video_engine_t;
+import uk.co.caprica.vlcj.player.embedded.videosurface.videoengine.VideoEngine;
 import uk.co.caprica.vlcj.binding.internal.libvlc_video_getProcAddress_cb;
 import uk.co.caprica.vlcj.binding.internal.libvlc_video_makeCurrent_cb;
 import uk.co.caprica.vlcj.binding.internal.libvlc_video_setup_cb;
@@ -40,7 +40,7 @@ public final class VideoEngineVideoSurface extends VideoSurface {
     /**
      * Video engine.
      */
-    private final libvlc_video_engine_t engine;
+    private final VideoEngine engine;
 
     /**
      * Component used to bridge the native video engine to the rendering surface.
@@ -61,7 +61,7 @@ public final class VideoEngineVideoSurface extends VideoSurface {
      * @param callback component used to bridge the native video engine to the rendering surface
      * @param videoSurfaceAdapter adapter to attach a video surface to a native media player
      */
-    public VideoEngineVideoSurface(libvlc_video_engine_t engine, VideoEngineCallback callback, VideoSurfaceAdapter videoSurfaceAdapter) {
+    public VideoEngineVideoSurface(VideoEngine engine, VideoEngineCallback callback, VideoSurfaceAdapter videoSurfaceAdapter) {
         super(videoSurfaceAdapter);
 
         this.engine = engine;

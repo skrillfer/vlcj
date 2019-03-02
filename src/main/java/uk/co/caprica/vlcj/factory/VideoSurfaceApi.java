@@ -19,7 +19,7 @@
 
 package uk.co.caprica.vlcj.factory;
 
-import uk.co.caprica.vlcj.binding.internal.libvlc_video_engine_t;
+import uk.co.caprica.vlcj.player.embedded.videosurface.videoengine.VideoEngine;
 import uk.co.caprica.vlcj.player.embedded.videosurface.callback.BufferFormatCallback;
 import uk.co.caprica.vlcj.player.embedded.videosurface.callback.RenderCallback;
 import uk.co.caprica.vlcj.player.embedded.videosurface.videoengine.VideoEngineCallback;
@@ -79,7 +79,7 @@ public final class VideoSurfaceApi extends BaseApi {
      * @param callback rendering callback
      * @return video surface
      */
-    public VideoEngineVideoSurface newVideoSurface(libvlc_video_engine_t videoEngine, VideoEngineCallback callback) {
+    public VideoEngineVideoSurface newVideoSurface(VideoEngine videoEngine, VideoEngineCallback callback) {
         return new VideoEngineVideoSurface(videoEngine, callback, VideoSurfaceAdapters.getVideoSurfaceAdapter());
     }
 
